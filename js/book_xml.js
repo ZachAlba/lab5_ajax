@@ -20,7 +20,7 @@ function loadXML(filePath, index) {
             var books = xml.getElementsByTagName("book");
             var book = books[index];
 
-            for(var i =0; i<SVGTextContentElement.length; i++){
+            for(var i =0; i<book.length; i++){
                 var author, title, sold, description;
                 author = document.createElement("h2");
                 author.appendChild(document.createTextNode(getNodeValue(book, "author")));
