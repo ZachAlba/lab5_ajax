@@ -34,7 +34,7 @@ function loadXML(filePath, index) {
                 description = document.createElement("p");
                 description.appendChild(document.createTextNode(getNodeValue(book, "description")));
                 detailsDiv.appendChild(description);
-
+                console.log(getNodeValue(book, "author"));
             }
             
         }
